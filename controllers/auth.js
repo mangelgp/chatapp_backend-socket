@@ -32,7 +32,7 @@ const crearUsuario = async (req, res = response) => {
 
         res.json({
             ok: true,
-            data: usuario,
+            usuario,
             token
         });
 
@@ -76,7 +76,7 @@ const login = async (req, res = response) => {
 
         res.json({
             ok: true,
-            data: usuarioDB,
+            usuario: usuarioDB,
             token
         });
 
